@@ -28,20 +28,24 @@ def calculator():
     number1 = input("What's the first number?: ")
     if not is_valid_number(number1):
         print("Invalid number, please try again.")
-        exit()
+        return
     number1 = float(number1)
 
     while should_accumulate:
         operator = input("+\n-\n*\n/\nPick an operation: ")
         if operator not in operations:
             print("Invalid operator, please try again.")
-            exit()
+            return
 
         number2 = input("What's the next number?: ")
         if not is_valid_number(number2):
             print("Invalid number, please try again.")
-            exit()
+            return
         number2 = float(number2)
+
+        if operator == '/' and number2 == 0:
+            print("Cannot divide by zero. Please try again.")
+            continue
 
         answer = operations[operator](number1, number2)
         
