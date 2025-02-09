@@ -1,0 +1,6 @@
+API_ID="example"
+API_KEY="example"
+EXERCISE_ENDPOINT="example"
+SHEET_ENDPOINT="example"
+USERNAME="example"
+TOKEN="example"
