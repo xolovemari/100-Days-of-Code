@@ -1,1 +1,4 @@
 .venv/
+
+# ignoring because is a template
+day 59/static/css/styles.css
